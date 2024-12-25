@@ -33,6 +33,12 @@ export default defineConfig({
 					// return `${chunkInfo.name.replace(/\.vue$/, "")}.js`;
 					return `${chunkInfo.name}.js`;
 				},
+				assetFileNames: (assetInfo) => {
+					if (assetInfo.name?.endsWith(".css")) {
+						return "index.css";
+					}
+					return assetInfo.name;
+				},
 				format: "esm",
 				globals: {
 					vue: "Vue",

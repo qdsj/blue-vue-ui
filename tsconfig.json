@@ -18,11 +18,6 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "outDir": "./dist",
-    "jsx": "preserve",
-    "types": [
-      "vite/client",
-      "vue"
-    ],
     "noEmit": false
   },
   "include": [
