@@ -1,6 +1,6 @@
 {
 	"name": "blue-vue-ui",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"main": "index.js",
 	"description": "blue-vue-ui, 一个基于vue3的UI库",
 	"type": "module",
@@ -21,7 +21,6 @@
 		"@vitejs/plugin-vue": "^5.2.1",
 		"rimraf": "^6.0.1",
 		"sass-embedded": "^1.83.0",
-		"scss": "^0.2.4",
 		"typescript": "^5.7.2",
 		"vite": "^6.0.5",
 		"vite-plugin-dts": "^4.4.0",
