@@ -12,13 +12,16 @@
 	],
 	"scripts": {
 		"dev": "cd playground && vite",
-		"build": "rimraf dist && tsc && vite build"
+		"build": "rimraf dist && tsc && vite build",
+		"release": "release-it"
 	},
 	"author": "zenos",
 	"license": "MIT",
 	"devDependencies": {
+		"@release-it/conventional-changelog": "^9.0.4",
 		"@types/node": "^22.10.2",
 		"@vitejs/plugin-vue": "^5.2.1",
+		"release-it": "^17.11.0",
 		"rimraf": "^6.0.1",
 		"sass-embedded": "^1.83.0",
 		"typescript": "^5.7.2",
