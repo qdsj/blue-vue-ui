@@ -1,7 +1,7 @@
 {
 	"name": "blue-vue-ui",
 	"version": "0.0.6",
-	"main": "dist/index.js",
+	"module": "index.js",
 	"description": "blue-vue-ui, 一个基于vue3的UI库",
 	"type": "module",
 	"keywords": [
