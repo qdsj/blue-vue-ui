@@ -2,10 +2,14 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import path from "path";
 import dts from "vite-plugin-dts";
+import vueSvgLoader from "vite-svg-loader";
 
 export default defineConfig({
 	plugins: [
 		vue(),
+		vueSvgLoader({
+			defaultImport: "component",
+		}),
 		dts({
 			include: ["src/**/*.ts", "src/**/*.vue"],
 			beforeWriteFile: (filePath, content) => {
@@ -29,15 +33,15 @@ export default defineConfig({
 			output: {
 				preserveModules: true,
 				preserveModulesRoot: "src",
-				entryFileNames: (chunkInfo) => {
-					// return `${chunkInfo.name.replace(/\.vue$/, "")}.js`;
-					return `${chunkInfo.name}.js`;
-				},
+				entryFileNames: "[name].js",
 				assetFileNames: (assetInfo) => {
-					if (assetInfo.name?.endsWith(".css")) {
+					if (assetInfo.names.length === 0) return "";
+
+					if (assetInfo.names[0].endsWith(".css")) {
 						return "index.css";
 					}
-					return assetInfo.name;
+
+					return assetInfo.names[0];
 				},
 				format: "esm",
 				globals: {

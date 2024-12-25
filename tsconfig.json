@@ -18,13 +18,19 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "outDir": "./dist",
-    "noEmit": false
+    "noEmit": false,
+    "types": [
+      "vite/client",
+      "vue",
+      "vite-svg-loader"
+    ]
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "src/index.d.ts"
   ],
   "exclude": [
     "node_modules",
