@@ -1,6 +1,10 @@
 {
   "extends": "../tsconfig.json",
-  "files": [],
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": ".",
+    "outDir": "./dist"
+  },
   "references": [
     {
       "path": "./tsconfig.app.json"

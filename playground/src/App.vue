@@ -1,13 +1,11 @@
 <script setup lang="ts">
-// import { Button, TopMenu } from "vue-components";
-import Button from "vue-components/Button/index.vue";
-import TopMenu from "vue-components/TopMenu/index.vue";
+import { Button, BeiAnFooter } from "vue-components";
 </script>
 
 <template>
 	<h1>App</h1>
 	<Button content="点击我"></Button>
-	<TopMenu></TopMenu>
+	<BeiAnFooter author="Zenos" github="https://github.com/blue-sky-123"></BeiAnFooter>
 </template>
 
 <style scoped lang="scss"></style>

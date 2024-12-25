@@ -9,9 +9,6 @@
       "vue-components/*": [
         "../src/*"
       ]
-    }
+    },
   },
-  "include": [
-    "./src/**/*"
-  ]
 }

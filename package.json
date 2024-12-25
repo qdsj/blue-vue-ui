@@ -2,15 +2,20 @@
 	"name": "blue-vue-ui",
 	"version": "1.0.0",
 	"main": "index.js",
+	"description": "blue-vue-ui, 一个基于vue3的UI库",
 	"type": "module",
+	"keywords": [
+		"vue",
+		"vue3",
+		"ui",
+		"blue-vue-ui"
+	],
 	"scripts": {
 		"dev": "cd playground && vite",
 		"build": "rimraf dist && tsc && vite build"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"description": "",
+	"author": "zenos",
+	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^22.10.2",
 		"@vitejs/plugin-vue": "^5.2.1",
@@ -21,5 +26,8 @@
 		"vite": "^6.0.5",
 		"vite-plugin-dts": "^4.4.0",
 		"vue": "^3.5.13"
-	}
+	},
+	"files": [
+		"dist"
+	]
 }
