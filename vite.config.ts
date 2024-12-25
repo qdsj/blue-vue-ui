@@ -21,11 +21,9 @@ export default defineConfig({
 		}),
 	],
 	build: {
-		// emptyOutDir: true,
 		sourcemap: true,
 		lib: {
 			entry: "./src/index.ts",
-
 			formats: ["es"],
 		},
 		rollupOptions: {
@@ -49,6 +47,7 @@ export default defineConfig({
 				},
 			},
 		},
+		assetsInlineLimit: 0,
 	},
 	resolve: {
 		alias: {
