@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Button, BeiAnFooter } from "vue-components";
+import { Button, BeiAnFooter } from "blue-vue-ui";
 </script>
 
 <template>

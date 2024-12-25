@@ -12,12 +12,6 @@ export default defineConfig({
 		}),
 		dts({
 			include: ["src/**/*.ts", "src/**/*.vue"],
-			beforeWriteFile: (filePath, content) => {
-				return {
-					filePath: filePath,
-					content: content,
-				};
-			},
 		}),
 	],
 	build: {

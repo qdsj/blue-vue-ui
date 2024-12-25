@@ -1,5 +1,6 @@
 import App from "./App.vue";
-import "./main.css";
 import { createApp } from "vue";
+import "./main.css";
+import "blue-vue-ui/assets/font.css";
 
 createApp(App).mount("#app");

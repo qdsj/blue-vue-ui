@@ -14,7 +14,9 @@ const getFileDistPath = (filePath) => {
 const packageJsonPath = getFilePath("package.json");
 const readmePath = getFilePath("README.md");
 const licensePath = getFilePath("LICENSE");
+const fontPath = getFilePath("src/assets");
 
 fs.cpSync(packageJsonPath, getFileDistPath("package.json"), { recursive: true });
 fs.cpSync(readmePath, getFileDistPath("README.md"), { recursive: true });
 fs.cpSync(licensePath, getFileDistPath("LICENSE"), { recursive: true });
+fs.cpSync(fontPath, getFileDistPath("assets"), { recursive: true });

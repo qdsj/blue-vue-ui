@@ -3,10 +3,10 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "vue-components": [
+      "blue-vue-ui": [
         "../src/index.ts"
       ],
-      "vue-components/*": [
+      "blue-vue-ui/*": [
         "../src/*"
       ]
     },

@@ -26,7 +26,7 @@ const props = defineProps<{
 	justify-content: center;
 	background-color: #f0f0f0;
 	color: #666;
-	font-size: 12px;
+	font-size: 10px;
 	line-height: 2;
 
 	padding: 1em;

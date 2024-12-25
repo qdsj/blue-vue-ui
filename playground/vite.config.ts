@@ -9,7 +9,7 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: {
-			"vue-components": path.resolve(__dirname, "../src"),
+			"blue-vue-ui": path.resolve(__dirname, "../src"),
 		},
 	},
 });
