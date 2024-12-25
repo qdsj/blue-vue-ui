@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+  },
+  "include": [
+    "./vite.config.ts"
+  ]
+}

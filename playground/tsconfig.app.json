@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "vue-components": [
+        "../src/index.ts"
+      ],
+      "vue-components/*": [
+        "../src/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
