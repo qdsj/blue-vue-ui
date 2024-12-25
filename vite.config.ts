@@ -10,7 +10,7 @@ export default defineConfig({
 			include: ["src/**/*.ts", "src/**/*.vue"],
 			beforeWriteFile: (filePath, content) => {
 				return {
-					filePath: filePath.replace(/\.vue\.d\.ts$/, ".d.ts"),
+					filePath: filePath,
 					content: content,
 				};
 			},
@@ -30,7 +30,8 @@ export default defineConfig({
 				preserveModules: true,
 				preserveModulesRoot: "src",
 				entryFileNames: (chunkInfo) => {
-					return `${chunkInfo.name.replace(/\.vue$/, "")}.js`;
+					// return `${chunkInfo.name.replace(/\.vue$/, "")}.js`;
+					return `${chunkInfo.name}.js`;
 				},
 				format: "esm",
 				globals: {
