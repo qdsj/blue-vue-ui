@@ -15,7 +15,7 @@
 		"build": "rimraf dist && tsc && vite build",
 		"release": "release-it"
 	},
-	"author": "zenos",
+	"author": "zenos.chen",
 	"license": "MIT",
 	"devDependencies": {
 		"@release-it/conventional-changelog": "^9.0.4",
